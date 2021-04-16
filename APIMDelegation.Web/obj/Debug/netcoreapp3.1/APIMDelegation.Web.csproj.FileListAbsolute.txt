@@ -1,0 +1,100 @@
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.exe
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.deps.json
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.runtimeconfig.json
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.runtimeconfig.dev.json
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.pdb
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.Views.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.Views.pdb
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.AzureADB2C.UI.Views.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.AzureADB2C.UI.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.csprojAssemblyReference.cache
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.AssemblyInfoInputs.cache
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.AssemblyInfo.cs
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.csproj.CoreCompileInputs.cache
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.RazorAssemblyInfo.cache
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.RazorAssemblyInfo.cs
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\staticwebassets\APIMDelegation.Web.StaticWebAssets.Manifest.cache
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\staticwebassets\APIMDelegation.Web.StaticWebAssets.xml
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\scopedcss\bundle\APIMDelegation.Web.styles.css
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.TagHelpers.input.cache
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.TagHelpers.output.cache
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.RazorCoreGenerate.cache
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.RazorTargetAssemblyInfo.cache
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.RazorTargetAssemblyInfo.cs
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.Views.pdb
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.csproj.CopyComplete
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.dll
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.pdb
+C:\Data\Source\Workspaces\Sample Code\APIMDelegationSample\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.genruntimeconfig.cache
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.exe
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.deps.json
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.runtimeconfig.json
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.runtimeconfig.dev.json
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.pdb
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.Views.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\APIMDelegation.Web.Views.pdb
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.AzureADB2C.UI.Views.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.AzureADB2C.UI.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.csprojAssemblyReference.cache
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.AssemblyInfoInputs.cache
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.AssemblyInfo.cs
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.csproj.CoreCompileInputs.cache
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.RazorAssemblyInfo.cache
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.RazorAssemblyInfo.cs
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\staticwebassets\APIMDelegation.Web.StaticWebAssets.Manifest.cache
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\staticwebassets\APIMDelegation.Web.StaticWebAssets.xml
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\scopedcss\bundle\APIMDelegation.Web.styles.css
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.TagHelpers.input.cache
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.TagHelpers.output.cache
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.RazorCoreGenerate.cache
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.RazorTargetAssemblyInfo.cache
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.RazorTargetAssemblyInfo.cs
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.Views.pdb
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.csproj.CopyComplete
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.dll
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.pdb
+C:\Data\Source\Repos\APIMDelegation\APIMDelegation.Web\obj\Debug\netcoreapp3.1\APIMDelegation.Web.genruntimeconfig.cache
