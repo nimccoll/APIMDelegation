@@ -3649,11 +3649,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Data\\Source\\Repos\\APIMDelegation\\APIMDelegation.Web\\APIMDelegation.Web.csproj",
+      "projectUniqueName": "C:\\Data\\Source\\Repos\\GitHub\\APIMDelegation\\APIMDelegation.Web\\APIMDelegation.Web.csproj",
       "projectName": "APIMDelegation.Web",
-      "projectPath": "C:\\Data\\Source\\Repos\\APIMDelegation\\APIMDelegation.Web\\APIMDelegation.Web.csproj",
+      "projectPath": "C:\\Data\\Source\\Repos\\GitHub\\APIMDelegation\\APIMDelegation.Web\\APIMDelegation.Web.csproj",
       "packagesPath": "C:\\Users\\nimccoll\\.nuget\\packages\\",
-      "outputPath": "C:\\Data\\Source\\Repos\\APIMDelegation\\APIMDelegation.Web\\obj\\",
+      "outputPath": "C:\\Data\\Source\\Repos\\GitHub\\APIMDelegation\\APIMDelegation.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -3670,7 +3670,6 @@
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Data\\Local NuGet Feed": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -3717,7 +3716,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

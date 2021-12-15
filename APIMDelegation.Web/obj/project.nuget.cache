@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZdEKEPxpoBiOQkyWO/VHBJsyFAm8Sm7kR+GtzomC065xaIG5VRzrQG5iYubwdN5VktqJKBnsL+TMX9TVS+CIHg==",
+  "dgSpecHash": "GIASumn8OFAP3zFsXFaOBMEBGOFJItbmHRZlX70Egq9leGVByWIS37AAQ4pA3NJRz0ZJeDiYOwGKDVCOt1kfgQ==",
   "success": true,
-  "projectFilePath": "C:\\Data\\Source\\Repos\\APIMDelegation\\APIMDelegation.Web\\APIMDelegation.Web.csproj",
+  "projectFilePath": "C:\\Data\\Source\\Repos\\GitHub\\APIMDelegation\\APIMDelegation.Web\\APIMDelegation.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nimccoll\\.nuget\\packages\\microsoft.aspnetcore.authentication.azureadb2c.ui\\3.1.14\\microsoft.aspnetcore.authentication.azureadb2c.ui.3.1.14.nupkg.sha512",
     "C:\\Users\\nimccoll\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.14\\microsoft.aspnetcore.authentication.jwtbearer.3.1.14.nupkg.sha512",

@@ -59,7 +59,6 @@ namespace APIMDelegation.Web.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 string operation = Request.Query["operation"];
-                string returnUrl = Request.Query["returnUrl"];
                 string salt = Request.Query["salt"];
                 string sig = Request.Query["sig"];
                 string emailAddress = string.Empty;
@@ -69,9 +68,88 @@ namespace APIMDelegation.Web.Controllers
                 {
                     return RedirectToAction("SignOut");
                 }
+                else if (operation == "Subscribe")
+                {
+                    string productId = Request.Query["productId"];
+                    string userId = Request.Query["userId"];
+                    bool isSignatureValid = false;
+                    using (var encoder = new HMACSHA512(Convert.FromBase64String(_delegationValidationKey)))
+                    {
+                        string signature = Convert.ToBase64String(encoder.ComputeHash(Encoding.UTF8.GetBytes((salt + "\n" + productId + "\n" + userId))));
+                        isSignatureValid = sig == signature;
+                    }
+                    if (isSignatureValid)
+                    {
+                        // Create subscription
+                        string accessToken = GenerateAccessToken();
+                        Product product = await GetProduct(productId, accessToken);
+                        if (product != null)
+                        {
+                            string state = "active";
+                            if (product.properties.approvalRequired)
+                            {
+                                state = "submitted";
+                            }
+                            Guid primaryKey = Guid.NewGuid();
+                            Guid secondaryKey = Guid.NewGuid();
+                            APIMSubscription subscription = await CreateSubscription(userId, accessToken, $"{product.properties.displayName} Subscription {userId}", $"/products/{productId}", primaryKey, secondaryKey, state);
+                            if (subscription != null)
+                            {
+                                redirectUrl = $"{_configuration.GetValue<string>("developerPortalSignoutUrl")}/profile";
+                                return new RedirectResult(redirectUrl);
+                            }
+                            else
+                            {
+                                // Subscription creation failed
+                            }
+                        }
+                        {
+                            // Failed to retrieve product
+                        }
+                    }
+                    else
+                    {
+                        // Invalid signature
+                    }
+                }
+                else if (operation == "Unsubscribe")
+                {
+                    string subscriptionId = Request.Query["subscriptionId"];
+                    bool isSignatureValid = false;
+                    using (var encoder = new HMACSHA512(Convert.FromBase64String(_delegationValidationKey)))
+                    {
+                        string signature = Convert.ToBase64String(encoder.ComputeHash(Encoding.UTF8.GetBytes((salt + "\n" + subscriptionId))));
+                        isSignatureValid = sig == signature;
+                    }
+                    if (isSignatureValid)
+                    {
+                        // Delete subscription
+                        string accessToken = GenerateAccessToken();
+                        await DeleteSubscription(subscriptionId, accessToken);
+                        redirectUrl = $"{_configuration.GetValue<string>("developerPortalSignoutUrl")}/profile";
+                        return new RedirectResult(redirectUrl);
+
+                    }
+                }
+                else if (operation == "Renew")
+                {
+                    string subscriptionId = Request.Query["subscriptionId"];
+                    bool isSignatureValid = false;
+                    using (var encoder = new HMACSHA512(Convert.FromBase64String(_delegationValidationKey)))
+                    {
+                        string signature = Convert.ToBase64String(encoder.ComputeHash(Encoding.UTF8.GetBytes((salt + "\n" + subscriptionId))));
+                        isSignatureValid = sig == signature;
+                    }
+                    if (isSignatureValid)
+                    {
+                        // Renew subscription
+                        // Currently, APIM does not support expiration for subscriptions
+                        // Planned for future release
+                    }
+                }
                 else // SignIn or SignUp - handled by Azure AD B2C
                 {
-                    // Validate the signature from the developer portal request
+                    string returnUrl = Request.Query["returnUrl"];
                     bool isSignatureValid = false;
                     using (var encoder = new HMACSHA512(Convert.FromBase64String(_delegationValidationKey)))
                     {
@@ -80,7 +158,6 @@ namespace APIMDelegation.Web.Controllers
                     }
                     if (isSignatureValid)
                     {
-                        // Get the user's email address
                         foreach (Claim claim in User.Claims)
                         {
                             if (claim.Type == "mail")
@@ -156,7 +233,6 @@ namespace APIMDelegation.Web.Controllers
 
         private async Task<User> GetUser(string emailAddress, string accessToken)
         {
-            // Retrieve the APIM user information via their email address via the APIM Management API
             User user = null;
 
             string url = $"{_apimUrl}/users?api-version=2019-12-01&$filter=email eq '{emailAddress}'";
@@ -179,9 +255,87 @@ namespace APIMDelegation.Web.Controllers
             return user;
         }
 
+        private async Task<User> GetUserById(string userId, string accessToken)
+        {
+            User user = null;
+
+            string url = $"{_apimUrl}/users/{userId}?api-version=2019-12-01";
+            _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("SharedAccessSignature", accessToken);
+            HttpResponseMessage response = await _httpClient.GetAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                string responseContent = await response.Content.ReadAsStringAsync();
+                user = JsonConvert.DeserializeObject<User>(responseContent);
+            }
+            else
+            {
+                string responseContent = await response.Content.ReadAsStringAsync();
+            }
+
+            return user;
+        }
+
+        private async Task<Product> GetProduct(string productId, string accessToken)
+        {
+            Product product = null;
+
+            string url = $"{_apimUrl}/products/{productId}?api-version=2019-12-01";
+            _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("SharedAccessSignature", accessToken);
+            HttpResponseMessage response = await _httpClient.GetAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                string responseContent = await response.Content.ReadAsStringAsync();
+                product = JsonConvert.DeserializeObject<Product>(responseContent);
+            }
+            else
+            {
+                string responseContent = await response.Content.ReadAsStringAsync();
+            }
+
+            return product;
+        }
+
+        private async Task<APIMSubscription> CreateSubscription(string userId, string accessToken, string displayName, string scope, Guid primaryKey, Guid secondaryKey, string state)
+        {
+            APIMSubscription apimSubscription = null;
+            string user = $"/users/{userId}";
+            string subscriptionName = displayName.Replace(" ", "-").ToLower();
+            string url = $"{_apimUrl}/subscriptions/{subscriptionName}?api-version=2019-12-01";
+            string requestBody = "{ \"properties\": { \"primaryKey\": \"" + primaryKey + "\", \"scope\": \"" + scope + "\", \"secondaryKey\": \"" + secondaryKey + "\", \"displayName\": \"" + displayName + "\", \"ownerId\": \"" + user + "\", \"state\": \"" + state + "\" } }";
+            _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("SharedAccessSignature", accessToken);
+            HttpResponseMessage response = await _httpClient.PutAsync(url, new StringContent(requestBody, Encoding.UTF8, "application/json"));
+            if (response.IsSuccessStatusCode)
+            {
+                string responseContent = await response.Content.ReadAsStringAsync();
+                apimSubscription = JsonConvert.DeserializeObject<APIMSubscription>(responseContent);
+                apimSubscription.properties.scope = scope;
+            }
+            else
+            {
+                string responseContent = await response.Content.ReadAsStringAsync();
+            }
+
+            return apimSubscription;
+        }
+
+        private async Task DeleteSubscription(string subscriptionId, string accessToken)
+        {
+            string url = $"{_apimUrl}/subscriptions/{subscriptionId}?api-version=2019-12-01";
+            _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("SharedAccessSignature", accessToken);
+            _httpClient.DefaultRequestHeaders.Add("If-Match", "*");
+            HttpResponseMessage response = await _httpClient.DeleteAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                // Success
+            }
+            else
+            {
+                string responseContent = await response.Content.ReadAsStringAsync();
+            }
+        }
+
         private async Task<string> GetSharedAccessToken(string userId, string accessToken)
         {
-            // Generate a shared access token for the current user via the APIM Management API
             string sharedAccessToken = string.Empty;
             string url = $"{_apimUrl}/users/{userId}/token?api-version=2019-12-01";
             TokenRequest tokenRequest = new TokenRequest();
@@ -209,7 +363,6 @@ namespace APIMDelegation.Web.Controllers
 
         private string GenerateAccessToken()
         {
-            // Generate an access token for the APIM Management API using the API Key
             string accessToken = string.Empty;
 
             var expiry = DateTime.UtcNow.AddDays(10);
